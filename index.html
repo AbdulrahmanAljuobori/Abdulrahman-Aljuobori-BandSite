@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Site Project Biography</title>
+    <link rel="stylesheet" href="styles/bio.css" />
+    
+</head>
+<body> 
+    <header class="header">
+        <nav class="header__item header header__item--left">
+            <div class="header__item header__item--logo">
+                <div class="logo"><img src="./assets/logo/Logo-bandsite.svg" alt="logo bandsite"></div>
+            </div>
+            <ul class="header__item--links">
+                <a class="header__link" href="#">Biography</a> 
+                <a class="header__link" href="./pages/shows.html">Shows</a>
+            </ul>    
+        </nav>    
+    </header>
+
+   
+     
+    <div class="About">
+        <h1>About the Musicians</h1>
+
+        <p>“We push each other to be the best. It’s not 
+            uncommon for one of us to say ‘this needs 
+            to be better, back to the drawing board’”</p>
+        <h2>The Bees Knees</h2>
+        
+        <p>The Bees Knees is a pop rock band originating 
+            from San Francisco, California. The band 
+            consists a dynamic lineup featuring two lead 
+            vocalists, two guitarists, a bassist, a 
+            keyboardist and a drummer. The band 
+            achieved its first commercial success as an 
+            unsigned act, drawing attention from their 
+            future manager. Having extensive experience 
+            working with both new and seasoned acts, the 
+            manager was confident the band could 
+            succeed even further with more support, 
+            pushing The Bees Knees to sign with a well 
+            known record label.</p>
+        <br>
+        <p>From there, the band has soared, gaining 
+            international recognition and ranking in the 
+            top 10 on the Poster Charts. New fans 
+            immediately fell in love with the band’s original 
+            and organic attitude, solidifying their place as 
+            one of the hottest and fastest up and coming 
+            acts of this century. Fans affectionately refer to 
+            themselves as “The Hive” and are drawn to 
+            their candid and authentic performances on 
+            stage. The Bees Knees are currently recording 
+            their second studio album, looking to be 
+            released in early 2024.</p>
+
+        
+
+    </div>
+
+    <h1>Photo Gallery</h1>
+    <section class="gallery">
+        <div class="gallery__item"><img src="./assets/images/Photo-gallery-1.jpg" alt="Photo gallery 1"></div>
+        <div class="gallery__item"><img src="./assets/images/Photo-gallery-2.jpg" alt="Photo gallery 2"></div>
+        <div class="gallery__item"><img src="./assets/images/Photo-gallery-3.jpg" alt="Photo gallery 3"></div>
+        <div class="gallery__item"><img src="./assets/images/Photo-gallery-4.jpg" alt="Photo gallery 4"></div>
+        <div class="gallery__item"><img src="./assets/images/Photo-gallery-5.jpg" alt="Photo gallery 5"></div>
+        <div class="gallery__item"><img src="./assets/images/Photo-gallery-6.jpg" alt="Photo gallery 6"></div>
+        <div class="gallery__item"><img src="./assets/images/Photo-gallery-7.jpg" alt="Photo gallery 7"></div>
+        <div class="gallery__item"><img src="./assets/images/Photo-gallery-8.jpg" alt="Photo gallery 8"></div>
+        <div class="gallery__item"><img src="./assets/images/Photo-gallery-9.jpg" alt="Photo gallery 9"></div>
+    </section>
+
+    <div class="comments">
+        <h3>Join the Conversation</h3>
+    </div>
+    <form class="form" id="commentform">
+        <div class="form__group">
+            <label for="name" class="form__label">NAME</label>
+            <input
+            type="text"
+            class="form__input"
+            name="name"
+            id="name"
+            placeholder="name"
+            />
+        </div>
+
+        <div class="form__group">
+            <label for="comment" class="form__label">COMMENT</label>
+            <textarea 
+            name="comment"
+            id="comment"
+            class="form__textarea"
+            placeholder="Add a new comment"
+            ></textarea>
+        </div>
+            <input 
+                type="submit"
+                value="COMMENT"
+            />
+        <div class="form__comments">
+            <img src="./assets/images/Mohan-muruge.jpg" alt="" width="100" class="rounded-circle">
+            
+        </div>
+    </form>
+    <ul class="comments__list" id="comments-list"></ul>
+
+    <section class="footer">
+        <div class="footer__content">
+
+          <div class="footer__content--text">  
+            <h1>Get In Touch</h1>
+            <img src="./assets/logo/Logo-bandsite.svg">
+            <p>The Bees Knees Management</p>
+            <br>
+            <p>503 Broadway Penthouse,<br>
+                New York, NY 10012, USA</p>
+            <br>
+            <p>info@thebeesknees.com</p>
+            <p>Limitless Artist Group</p>
+            <br>
+            <p>ARCH Entertainment</p>
+            <br>
+            <p>Booking Agent for<br>
+                USA / South America / Japan</p>
+            <br>
+            <p>bookings@limitlessag.com</p>   
+            <br>
+            <p>ARCH Entertainment</p>
+            <br>
+            <p>Booking Agent for<br>
+                UK / EU / AU</p>
+            <br>
+            <p>bookings@archentertainment.com</p>    
+            <br>
+            <p>Copyright The Bees Knees © 2023 All Rights Reserved</p>
+          </div>          
+            <div class="icons">
+                <a class="icons__instagram" href="#"><img src="./assets/icons/SVG/Icon-instagram.svg" alt="Icon-instagram"></a>
+                <a class="icons__facebook" href="#"><img src="./assets/icons/SVG/Icon-facebook.svg" alt="Icon-facebook"></a>
+                <a class="icons__twitter" href="#"><img src="./assets/icons/SVG/Icon-twitter.svg" alt="Icon-twitter"></a>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <script src="/scripts/index-page.js"></script>
+</body>
+</html>

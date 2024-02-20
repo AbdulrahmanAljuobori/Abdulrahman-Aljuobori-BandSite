@@ -7,74 +7,148 @@
     <link rel="stylesheet" href="/styles/shows.css" />
     <link rel="stylesheet" href="/styles/bio.css" />
   </head>
-<body>
-    <header class="header">
-      <nav class="header__shows--item">
-        <div class="header__shows--item--logo">
-          <div class="logo">
-            <img src="/assets/logo/Logo-bandsite.svg" alt="logo bandsite" />
-          </div>
-        </div>
-        <ul class="header__item--links">
-          <a class="header__link" href="/index.html">Biography</a>
-          <a class="header__link" href="#">Shows</a>
+  <body>
+    <header>
+      <nav class="header">
+        <img
+          class="header__logo"
+          src="/assets/logo/Logo-bandsite.svg"
+          alt="logo bandsite"
+        />
+
+        <ul class="header__links">
+          <!-- <img class="header__logo" src="/assets/logo/Logo-bandsite.svg" alt="logo bandsite" /> -->
+
+          <li class="header__item">
+            <a class="header__link" href="../index.html">Biography</a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="./shows.html">Shows</a>
+          </li>
         </ul>
       </nav>
-      </header>
-      <main class="hero">
-        <section class="hero__shows">
+    </header>
+
+    <main class="hero">
+      <!--couldn't figure how to make the hero be side to side like the mockup-->
+      <section class="hero__shows">
         <div class="hero__titles">
-          <h2 class="hero__main-title">Beautiful Beasts Album</h2>
-          <h1 class="hero__subtitle"> Strips of Yellow<br>x For The Stings</h1>
+          <h2 class="hero__titles hero__titles--main">
+            Beautiful Beasts Album
+          </h2>
+          <h1 class="hero__titles hero__titles--subtitle">
+            Stripes of Yellow x<br />For The Stings
+          </h1>
         </div>
 
         <iframe
-            class="hero__iframe"
-            scrolling="0"
-            frameborder="no"
-            allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139428697&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-        </section>
-      </main>   
+          class="hero__iframe"
+          scrolling="0"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139428697&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        >
+        </iframe>
+      </section>
+    </main>
 
-        
-      <h2>Shows</h2>
+    <!--not sure how to setup it to style it since its javascript-->
+    <h2 class="list">Shows</h2>
+    <div class="shows__container"></div>
 
-        <ul class="shows__dates">
-          <li>Mon Sept 09 2024</li>
-          <li>Tue Sept 17 2024</li>
-          <li>Sat Oct 12 2024</li>
-          <li>Sat Nov 16 2024</li>
-          <li>Fri Nov 29 2024</li>
-          <li>Wed Dec 18 2024</li>
-        </ul>
-        <ul class="shows__venue">
-          <li>Ronald Lane</li>
-          <li>Pier 3 East</li>
-          <li>View Lounge</li>
-          <li>Hyatt Agency</li>
-          <li>Moscow Center</li>
-          <li>Press Club</li>
-        </ul>
-        <ul class="shows__location">
-          <li>San Francisco, CA</li>
-          <li>San Francisco, CA</li>
-          <li>San Francisco, CA</li>
-          <li>San Francisco, CA</li>
-          <li>San Francisco, CA</li>
-          <li>San Francisco, CA</li>
-        </ul>
+    <footer class="footer">
+      <!-- <h1 class="footer__header">Get In Touch</h1> -->
 
-      
-        
-       
+      <!-- <div class="footer__icons">
 
+                <a class="footer__link" href="#"><img class="footer__icon" src="../assets/icons/SVG/Icon-instagram.svg" alt="Icon-instagram"></a>
+                <a class="footer__link" href="#"><img class="footer__icon" src="../assets/icons/SVG/Icon-facebook.svg" alt="Icon-facebook"></a>
+                <a class="footer__link" href="#"><img class="footer__icon" src="../assets/icons/SVG/Icon-twitter.svg" alt="Icon-twitter"></a>
 
-        
-        
-       
-    
-    <script src="/scripts/build-shows-page.js"></script>
-</body>
+              </div> -->
+      <div class="footer__top-container">
+        <h1 class="footer__header">Get In Touch</h1>
+
+        <div class="footer__icons">
+          <a class="footer__link" href="#"
+            ><img
+              class="footer__icon"
+              src="../assets/icons/SVG/Icon-instagram.svg"
+              alt="Icon-instagram"
+          /></a>
+          <a class="footer__link" href="#"
+            ><img
+              class="footer__icon"
+              src="../assets/icons/SVG/Icon-facebook.svg"
+              alt="Icon-facebook"
+          /></a>
+          <a class="footer__link" href="#"
+            ><img
+              class="footer__icon"
+              src="../assets/icons/SVG/Icon-twitter.svg"
+              alt="Icon-twitter"
+          /></a>
+        </div>
+
+        <img
+          class="footer__logo footer__logo--top"
+          src="../assets/logo/Logo-bandsite.svg"
+        />
+      </div>
+
+      <div class="footer__content">
+        <div class="footer__text footer__text--management">
+          <!-- <h1 class="footer__header">Get In Touch</h1> -->
+
+          <p class="footer__text footer__text--header">
+            The Bees Knees Management
+          </p>
+
+          <p class="footer__text">
+            503 Broadway Penthouse, New York, NY 10012, USA
+          </p>
+
+          <p class="footer__text">info@thebeesknees.com</p>
+        </div>
+
+        <div class="footer__text footer__text--artist">
+          <!-- <div class="footer__icons">
+
+                  <a class="footer__link" href="#"><img class="footer__icon" src="../assets/icons/SVG/Icon-instagram.svg" alt="Icon-instagram"></a>
+                  <a class="footer__link" href="#"><img class="footer__icon" src="../assets/icons/SVG/Icon-facebook.svg" alt="Icon-facebook"></a>
+                  <a class="footer__link" href="#"><img class="footer__icon" src="../assets/icons/SVG/Icon-twitter.svg" alt="Icon-twitter"></a>
+  
+                </div>     -->
+
+          <p class="footer__text footer__text--header">
+            Limitless Artist Group
+          </p>
+
+          <p class="footer__text">
+            Booking Agent for USA / South America / Japan
+          </p>
+
+          <p class="footer__text">bookings@limitlessag.com</p>
+        </div>
+
+        <div class="footer__text footer__text--entertainment">
+          <p class="footer__text footer__text--header">ARCH Entertainment</p>
+
+          <p class="footer__text">Booking Agent for UK / EU / AU</p>
+
+          <p class="footer__text">bookings@archentertainment.com</p>
+        </div>
+      </div>
+
+      <img class="footer__logo" src="../assets/logo/Logo-bandsite.svg" />
+
+      <p class="footer__copyright">
+        Copyright The Bees Knees © 2023 All Rights Reserved
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/scripts/build-shows-page.js" type="module"></script>
+  </body>
 </html>
